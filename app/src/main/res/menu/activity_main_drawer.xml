@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fantasy"
+            android:icon="@drawable/ic_menu_fantasy"
+            android:title="@string/menu_fantasy" />
+        <item
+            android:id="@+id/nav_scifi"
+            android:icon="@drawable/ic_menu_scifi"
+            android:title="@string/menu_scifi" />
+        <item
+            android:id="@+id/nav_nonfiction"
+            android:icon="@drawable/menu_nonfict"
+            android:title="@string/menu_nonfiction" />
+        <item
+            android:id="@+id/nav_poetry"
+            android:icon="@drawable/ic_menu_poetry"
+            android:title="@string/menu_poetry"/>
+        <item
+            android:id="@+id/nav_general_fiction"
+            android:icon="@drawable/ic_menu_genfic"
+            android:title="@string/menu_general_fiction"/>
+    </group>
+</menu>
