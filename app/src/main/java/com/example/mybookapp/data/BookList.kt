@@ -1,6 +1,6 @@
 package com.example.mybookapp.data
 
-val books: List<Book> = listOf(
+val booksListMockData: List<Book> = listOf(
     Book(
         id = "B1X9G7",
         title = "To Kill a Mockingbird",
