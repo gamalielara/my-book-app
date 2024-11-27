@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_fantasy"
-        android:name="com.example.mybookapp.ui.home.HomeFragment"
+        android:name="com.example.mybookapp.ui.fantasy.FantasyFragment"
         android:label="@string/menu_fantasy"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_scifi"
-        android:name="com.example.mybookapp.ui.gallery.GalleryFragment"
+        android:name="com.example.mybookapp.ui.scifi.ScifiFragment"
         android:label="@string/menu_scifi"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_nonfiction"
-        android:name="com.example.mybookapp.ui.slideshow.SlideshowFragment"
+        android:name="com.example.mybookapp.ui.nonfiction.NonfictionFragment"
         android:label="@string/menu_nonfiction"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

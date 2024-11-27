@@ -1,4 +1,4 @@
-package com.example.mybookapp.ui.bookListBaseFragment
+package com.example.mybookapp.ui.bookListBase
 
 import android.os.Bundle
 import android.util.Log
