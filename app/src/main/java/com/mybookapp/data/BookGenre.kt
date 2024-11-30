@@ -1,4 +1,4 @@
-package com.example.mybookapp.data
+package com.mybookapp.data
 
 class BookGenre {
     companion object {

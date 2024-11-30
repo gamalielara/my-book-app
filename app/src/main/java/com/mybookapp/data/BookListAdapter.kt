@@ -1,4 +1,4 @@
-package com.example.mybookapp.data
+package com.mybookapp.data
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.mybookapp.R
+import com.mybookapp.R
 
 
 class BookListAdapter(
@@ -45,7 +45,7 @@ class BookListAdapter(
         return ListViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: BookListAdapter.ListViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val data = bookList[position]
 
         holder.bindData(

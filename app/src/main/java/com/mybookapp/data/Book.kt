@@ -1,4 +1,4 @@
-package com.example.mybookapp.data
+package com.mybookapp.data
 
 data class Book(
     val id: String,

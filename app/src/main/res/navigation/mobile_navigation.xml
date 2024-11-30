@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/nav_fantasy"
-        android:name="com.example.mybookapp.ui.fantasy.FantasyFragment"
+        android:name="com.mybookapp.ui.fantasy.FantasyFragment"
         android:label="@string/menu_fantasy"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_scifi"
-        android:name="com.example.mybookapp.ui.scifi.ScifiFragment"
+        android:name="com.mybookapp.ui.scifi.ScifiFragment"
         android:label="@string/menu_scifi"
         tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
         android:id="@+id/nav_nonfiction"
-        android:name="com.example.mybookapp.ui.nonfiction.NonfictionFragment"
+        android:name="com.mybookapp.ui.nonfiction.NonfictionFragment"
         android:label="@string/menu_nonfiction"
         tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
         android:id="@+id/nav_poetry"
-        android:name="com.example.mybookapp.ui.poetry.PoetryFragment"
+        android:name="com.mybookapp.ui.poetry.PoetryFragment"
         android:label="Poetry"
         tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
         android:id="@+id/nav_general_fiction"
-        android:name="com.example.mybookapp.ui.generalFiction.GeneralFictionFragment"
+        android:name="com.mybookapp.ui.generalFiction.GeneralFictionFragment"
         android:label="General Fiction"
         tools:layout="@layout/fragment_book_list_base" />
 </navigation>

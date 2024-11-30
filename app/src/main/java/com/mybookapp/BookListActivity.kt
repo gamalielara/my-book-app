@@ -1,4 +1,4 @@
-package com.example.mybookapp
+package com.mybookapp
 
 import android.os.Bundle
 import android.view.Menu
@@ -9,9 +9,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.mybookapp.databinding.ActivityBookListBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import com.mybookapp.databinding.ActivityBookListBinding
 
 class BookListActivity : AppCompatActivity() {
 

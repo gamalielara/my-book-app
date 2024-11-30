@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mybookapp"
+    namespace = "com.mybookapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mybookapp"
+        applicationId = "com.mybookapp"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -35,6 +35,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
