@@ -1,4 +1,4 @@
-package com.myproject.mybookapp
+package com.mybookapp
 
 import org.junit.Assert.*
 import org.junit.Test
