@@ -7,6 +7,7 @@
     android:paddingVertical="20dp">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/bookItemCard"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:cardBackgroundColor="@color/md_theme_secondary"

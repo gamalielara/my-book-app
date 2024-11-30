@@ -37,14 +37,15 @@ open class BookListBaseFragment(
     }
 
     fun setupBookList() {
+        val context = requireContext()
         val bookListRecyclerView = binding.bookListView
-        val bookListLayoutManager = LinearLayoutManager(requireContext())
+        val bookListLayoutManager = LinearLayoutManager(context)
 
         bookListRecyclerView.adapter =
             BookListAdapter(
                 context = requireContext(),
                 bookList = bookList
-            ) { TODO("Implement later") }
+            )
         bookListRecyclerView.layoutManager = bookListLayoutManager
 
     }
