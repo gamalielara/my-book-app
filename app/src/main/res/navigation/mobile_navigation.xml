@@ -15,11 +15,23 @@
         android:id="@+id/nav_scifi"
         android:name="com.example.mybookapp.ui.scifi.ScifiFragment"
         android:label="@string/menu_scifi"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
         android:id="@+id/nav_nonfiction"
         android:name="com.example.mybookapp.ui.nonfiction.NonfictionFragment"
         android:label="@string/menu_nonfiction"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_book_list_base" />
+
+    <fragment
+        android:id="@+id/nav_poetry"
+        android:name="com.example.mybookapp.ui.poetry.PoetryFragment"
+        android:label="Poetry"
+        tools:layout="@layout/fragment_book_list_base" />
+
+    <fragment
+        android:id="@+id/nav_general_fiction"
+        android:name="com.example.mybookapp.ui.generalFiction.GeneralFictionFragment"
+        android:label="General Fiction"
+        tools:layout="@layout/fragment_book_list_base" />
 </navigation>
