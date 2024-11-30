@@ -1,7 +1,6 @@
 package com.example.mybookapp.ui.bookListBase
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,7 +37,6 @@ open class BookListBaseFragment(
     }
 
     fun setupBookList() {
-        Log.d("HEHE", bookList.toString())
         val bookListRecyclerView = binding.bookListView
         val bookListLayoutManager = LinearLayoutManager(requireContext())
 
