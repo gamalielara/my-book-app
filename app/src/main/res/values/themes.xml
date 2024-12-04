@@ -51,6 +51,7 @@
     </style>
 
     <style name="Theme.MyBookApp.NoActionBar">
+        <item name="android:statusBarColor">@color/md_theme_primary</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
