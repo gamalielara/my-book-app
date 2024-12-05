@@ -1,12 +1,11 @@
 package com.mybookapp
 
 import android.os.Bundle
-import android.util.Log
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.mybookapp.data.Book
 import com.mybookapp.data.BookListIntentKeys
 import com.mybookapp.databinding.ActivityBookDetailBinding
 
@@ -16,21 +15,28 @@ class BookDetailActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_book_detail)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        val bookDetail = intent.getSerializableExtra(BookListIntentKeys.BOOK_DETAIL_DATA) as Book
 
         val binding = ActivityBookDetailBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        setSupportActionBar(binding.appBarBookDetail.toolbar)
+        val toolbar = binding.appBarBookDetail.toolbar
 
-        // Explicitly set the status bar color
+        setSupportActionBar(toolbar)
+        supportActionBar!!.title = bookDetail.title
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
         window.statusBarColor = ContextCompat.getColor(this, R.color.md_theme_primary)
+    }
 
-        val hehe = intent.getSerializableExtra(BookListIntentKeys.BOOK_DETAIL_DATA)
-        Log.d("HAI ", hehe.toString())
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                true
+            }
 
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }
