@@ -9,4 +9,5 @@ data class Book(
     val author: String,
     val rate: Double,
     val cover: String,
+    val excerpt: String
 ) : Serializable
