@@ -1,7 +1,10 @@
 package com.mybookapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -10,7 +13,6 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
 import com.mybookapp.databinding.ActivityBookListBinding
 
 class BookListActivity : AppCompatActivity() {
@@ -26,11 +28,6 @@ class BookListActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarBookList.toolbar)
 
-        binding.appBarBookList.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .setAnchorView(R.id.fab).show()
-        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_book_list)
@@ -46,6 +43,19 @@ class BookListActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val headerView = navView.getHeaderView(0)
+        val userDetailBox = headerView.findViewById<LinearLayout>(R.id.userDetailHeader)
+
+        userDetailBox.setOnClickListener {
+            Intent(this, UserDetailActivity::class.java).also {
+                Log.d("HAI ", getString(R.string.profile_username))
+                it.putExtra("username", getString(R.string.profile_username))
+                it.putExtra("userEmail", getString(R.string.profile_user_email))
+
+                startActivity(it)
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

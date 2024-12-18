@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyBookApp"
         tools:targetApi="31">
         <activity
+            android:name=".UserDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".BookDetailActivity"
             android:exported="false"
             android:theme="@style/Theme.MyBookApp.NoActionBar" />
