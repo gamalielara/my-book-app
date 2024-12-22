@@ -38,13 +38,15 @@ class BookListActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_fantasy,
-                R.id.nav_scifi,
-                R.id.nav_nonfiction,
-                R.id.nav_poetry,
-                R.id.nav_general_fiction
+                R.id.all_books_menu,
+                R.id.nav_fantasy_menu,
+                R.id.nav_scifi_menu,
+                R.id.nav_nonfiction_menu,
+                R.id.nav_poetry_menu,
+                R.id.nav_general_fiction_menu
             ), drawerLayout
         )
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 

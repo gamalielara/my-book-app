@@ -3,34 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_fantasy">
+    app:startDestination="@+id/all_books_menu">
 
     <fragment
-        android:id="@+id/nav_fantasy"
+        android:id="@+id/all_books_menu"
+        android:name="com.mybookapp.ui.allBooks.AllBooksFragment"
+        android:label="@string/menu_all_books"
+        tools:layout="@layout/fragment_book_list_base" />
+
+    <fragment
+        android:id="@+id/nav_fantasy_menu"
         android:name="com.mybookapp.ui.fantasy.FantasyFragment"
         android:label="@string/menu_fantasy"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
-        android:id="@+id/nav_scifi"
+        android:id="@+id/nav_scifi_menu"
         android:name="com.mybookapp.ui.scifi.ScifiFragment"
         android:label="@string/menu_scifi"
         tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
-        android:id="@+id/nav_nonfiction"
+        android:id="@+id/nav_nonfiction_menu"
         android:name="com.mybookapp.ui.nonfiction.NonfictionFragment"
         android:label="@string/menu_nonfiction"
         tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
-        android:id="@+id/nav_poetry"
+        android:id="@+id/nav_poetry_menu"
         android:name="com.mybookapp.ui.poetry.PoetryFragment"
         android:label="Poetry"
         tools:layout="@layout/fragment_book_list_base" />
 
     <fragment
-        android:id="@+id/nav_general_fiction"
+        android:id="@+id/nav_general_fiction_menu"
         android:name="com.mybookapp.ui.generalFiction.GeneralFictionFragment"
         android:label="General Fiction"
         tools:layout="@layout/fragment_book_list_base" />

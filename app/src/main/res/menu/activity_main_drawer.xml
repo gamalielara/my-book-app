@@ -5,23 +5,27 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_fantasy"
+            android:id="@+id/all_books_menu"
+            android:icon="@drawable/ic_menu_all_books"
+            android:title="@string/all_books" />
+        <item
+            android:id="@+id/nav_fantasy_menu"
             android:icon="@drawable/ic_menu_fantasy"
             android:title="@string/menu_fantasy" />
         <item
-            android:id="@+id/nav_scifi"
+            android:id="@+id/nav_scifi_menu"
             android:icon="@drawable/ic_menu_scifi"
             android:title="@string/menu_scifi" />
         <item
-            android:id="@+id/nav_nonfiction"
+            android:id="@+id/nav_nonfiction_menu"
             android:icon="@drawable/menu_nonfict"
             android:title="@string/menu_nonfiction" />
         <item
-            android:id="@+id/nav_poetry"
+            android:id="@+id/nav_poetry_menu"
             android:icon="@drawable/ic_menu_poetry"
             android:title="@string/menu_poetry"/>
         <item
-            android:id="@+id/nav_general_fiction"
+            android:id="@+id/nav_general_fiction_menu"
             android:icon="@drawable/ic_menu_genfic"
             android:title="@string/menu_general_fiction"/>
     </group>
