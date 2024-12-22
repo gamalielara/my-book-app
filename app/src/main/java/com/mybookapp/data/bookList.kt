@@ -65,6 +65,60 @@ val booksListMockData: List<Book> = listOf(
         
         Along the way, he meets a series of mentors, including an Englishman seeking the secrets of alchemy and a wise alchemist who teaches him about the Soul of the World. Through trials and self-reflection, Santiago learns that the treasure he seeks is not just material but spiritual. "The Alchemist" inspires readers to listen to their hearts and pursue their personal legends with courage and faith.
     """
+    ),
+    Book(
+        id = "HSOS720",
+        title = "Sapiens: A Brief History of Humankind",
+        genre = BookGenre.NONFICTION,
+        author = "Yuval Noah Harari",
+        rate = 4.7,
+        cover = "https://m.media-amazon.com/images/I/712Uo++xK2L._AC_UF1000,1000_QL80_.jpg",
+        excerpt = "Homo sapiens rules the world because it is the only animal that can believe in things that exist purely in its own imagination, such as gods, nations, money, and human rights. This book delves into the history of these myths and explores how they have shaped our societies and lives."
+    ),
+    Book(
+        id = "289N31",
+        title = "Educated",
+        genre = BookGenre.NONFICTION,
+        author = "Tara Westover",
+        rate = 4.5,
+        cover = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1506026635i/35133922.jpg",
+        excerpt = "Born to survivalists in the mountains of Idaho, Tara Westover was seventeen when she first set foot in a classroom. Her quest for knowledge transformed her, taking her far from her roots and allowing her to reimagine her identity. This memoir is a gripping tale of triumph against incredible odds."
+    ),
+    Book(
+        id = "SHS82JH2",
+        title = "The Road",
+        genre = BookGenre.GENERAL_FICTION,
+        author = "Cormac McCarthy",
+        rate = 4.2,
+        cover = "https://m.media-amazon.com/images/I/51M7XGLQTBL._AC_UF894,1000_QL80_.jpg",
+        excerpt = "In the aftermath of an unnamed catastrophe, a father and his young son journey across a desolate American landscape. Battling cold, hunger, and the ever-present threat of violence, their love and determination serve as a testament to the endurance of the human spirit."
+    ),
+    Book(
+        id = "SHSOW2",
+        title = "Leaves of Grass",
+        genre = BookGenre.POETRY,
+        author = "Walt Whitman",
+        rate = 4.6,
+        cover = "https://m.media-amazon.com/images/I/71ZUAQQ-9IL._AC_UF894,1000_QL80_.jpg",
+        excerpt = "Walt Whitman's seminal collection celebrates the beauty and diversity of the American experience. Through vivid imagery and free verse, Whitman explores themes of nature, democracy, and individuality, capturing the essence of the human spirit in every line."
+    ),
+    Book(
+        id = "SGWIW9",
+        title = "The Sun and Her Flowers",
+        genre = BookGenre.POETRY,
+        author = "Rupi Kaur",
+        rate = 4.3,
+        cover = "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1499791446i/35606560.jpg",
+        excerpt = "A journey of wilting, falling, rooting, rising, and blooming. This collection of poetry touches on themes of love, heartbreak, ancestry, and self-empowerment. Each poem resonates with raw emotion and profound simplicity."
+    ),
+    Book(
+        id = "SJHDIRE",
+        title = "Becoming",
+        genre = BookGenre.NONFICTION,
+        author = "Michelle Obama",
+        rate = 4.7,
+        cover = "https://m.media-amazon.com/images/I/81cJTmFpG-L.jpg",
+        excerpt = "In this deeply personal memoir, Michelle Obama invites readers into her world, chronicling the experiences that have shaped her. From her childhood in the South Side of Chicago to her years as First Lady, she reflects on her triumphs and disappointments with grace and candor."
     )
 
 )
